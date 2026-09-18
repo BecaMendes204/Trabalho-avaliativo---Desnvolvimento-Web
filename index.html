@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title id="tituloAba">Anomalia Dimensional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="corpo">
+
+  <!-- Camadas de fundo: estrelas e partículas são criadas pelo JavaScript -->
+  <div class="ceu" id="ceu"></div>
+  <div class="lua" id="lua"></div>
+  <div class="particulas" id="particulas"></div>
+
+  <main class="palco">
+
+    <!-- ================= CENA 1: A ANOMALIA ================= -->
+    <section id="cena1">
+      <p class="etiqueta">// SETOR 7 — LEITURA INSTÁVEL</p>
+      <h1 id="tituloPrincipal">Anomalia Dimensional Detectada</h1>
+      <p class="narrativa">
+        Os sensores captaram um fenômeno desconhecido girando no ar.
+        Nada que conhecemos deveria brilhar dessa forma.
+      </p>
+    </section>
+
+    <!-- O portal fica sempre visível no centro, em todas as cenas -->
+    <div class="portal" id="portal">
+      <div class="anel"></div>
+      <div class="nucleo" id="nucleo"></div>
+    </div>
+
+    <!-- Botão que inicia tudo -->
+    <button id="btnInvestigar">INVESTIGAR PORTAL</button>
+
+    <!-- ================= CENA 2: ATIVAÇÃO ================= -->
+    <section id="cena2">
+      <p id="msg1" class="linha escondido">Energia dimensional aumentando...</p>
+      <p id="msg2" class="linha escondido">Portal estabilizado.</p>
+      <p id="msg3" class="linha escondido destaque">Você realmente deseja atravessar?</p>
+    </section>
+
+    <!-- ================= CENA 3: DECISÃO ================= -->
+    <section id="cena3" class="escondido">
+      <div class="botoes">
+        <button id="btnAtravessar">ATRAVESSAR</button>
+        <button id="btnVoltar" class="secundario">VOLTAR</button>
+      </div>
+      <p id="msgVoltar" class="aviso escondido"></p>
+    </section>
+
+    <!-- ================= CENA 4: A DIMENSÃO ================= -->
+    <section id="cena4" class="escondido">
+      <h1 class="chegada">VOCÊ CHEGOU À DIMENSÃO PÚRPURA</h1>
+      <p class="narrativa">
+        O silêncio aqui tem cor. Continentes flutuam sem chão e o tempo
+        parece ter esquecido de continuar.
+      </p>
+
+      <p class="deteccao">🔮 A dimensão detectou sua presença.</p>
+      <button id="btnDestino">DESCOBRIR MEU DESTINO</button>
+
+      <!-- O resultado do sorteio é escrito aqui pelo JavaScript -->
+      <div id="cartaoDestino" class="cartao escondido">
+        <h2 id="nomeDestino"></h2>
+        <p id="textoDestino"></p>
+      </div>
+
+      <p id="contador" class="contador"></p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
